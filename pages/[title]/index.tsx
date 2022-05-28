@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { Line, Node, parse } from "@progfay/scrapbox-parser";
 import { GetStaticPropsContext } from "next";
+import Image from "next/image";
 
 const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
   depth,
@@ -52,7 +53,7 @@ const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
                   height: "300px",
                 }}
               >
-                <img width={300} alt="" src={node.src} />
+                <Image width={300} alt="" src={node.src} />
               </span>
             );
           case "link":
