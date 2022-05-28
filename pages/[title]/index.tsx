@@ -103,7 +103,7 @@ const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
         }
       })}
       <footer>
-        Edit{" "}
+        Edit this page:{" "}
         <a
           href={
             "https://scrapbox.io/" + process.env.scrapboxProject + "/" + title
