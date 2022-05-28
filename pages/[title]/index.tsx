@@ -10,7 +10,6 @@ const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
   return (
     <>
       {nodes.map((node, idx) => {
-        console.log(node);
         switch (node.type) {
           case "plain":
             return (
@@ -53,7 +52,12 @@ const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
                   height: "300px",
                 }}
               >
-                <Image width={300} alt="" src={node.src} />
+                <Image
+                  loader={({ src }) => `${src}`}
+                  width={300}
+                  alt=""
+                  src={node.src}
+                />
               </span>
             );
           case "link":
@@ -88,7 +92,6 @@ const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
     <div>
       <h1>{title}</h1>
       {lines.map((line, idx) => {
-        console.log();
         if (line.nodes?.length > 0) {
           return (
             <div
@@ -114,14 +117,18 @@ export async function getStaticPaths() {
     "https://scrapbox.io/api/pages/yuiseki?skip=0&sort=updated&limit=100&q="
   );
   const json = await res.json();
-  const paths = json.pages.map((page: { title: string }) => {
-    return "/" + encodeURIComponent(page.title);
-  });
+  const paths = json.pages
+    .map((page: { title: string }) => {
+      if (page.title.length > 0) {
+        return "/" + encodeURIComponent(page.title);
+      }
+    })
+    .filter((title: string) => title);
   return { paths: paths, fallback: false };
 }
 
 export async function getStaticProps({ params }: GetStaticPropsContext) {
-  console.log("getStaticProps");
+  console.log("getStaticProps", params?.title);
   if (!params) {
     return {
       props: {
