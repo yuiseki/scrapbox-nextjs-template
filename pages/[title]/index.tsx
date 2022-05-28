@@ -1,7 +1,11 @@
 import { useRouter } from "next/router";
-import { parse } from "@progfay/scrapbox-parser";
+import { Line, Node, parse } from "@progfay/scrapbox-parser";
+import { GetStaticPropsContext } from "next";
 
-const Nodes = ({ depth, nodes }) => {
+const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
+  depth,
+  nodes,
+}) => {
   return (
     <>
       {nodes.map((node, idx) => {
@@ -71,7 +75,7 @@ const Nodes = ({ depth, nodes }) => {
   );
 };
 
-const Page = ({ lines }) => {
+const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
   const router = useRouter();
   const { title } = router.query;
 
@@ -109,14 +113,21 @@ export async function getStaticPaths() {
     "https://scrapbox.io/api/pages/yuiseki?skip=0&sort=updated&limit=100&q="
   );
   const json = await res.json();
-  const paths = json.pages.map((page) => {
+  const paths = json.pages.map((page: { title: string }) => {
     return "/" + encodeURIComponent(page.title);
   });
   return { paths: paths, fallback: true };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: GetStaticPropsContext) {
   console.log("getStaticProps");
+  if (!params) {
+    return {
+      props: {
+        lines: undefined,
+      },
+    };
+  }
   const res = await fetch(
     "https://scrapbox.io/api/pages/yuiseki/" + params.title + "/text"
   );

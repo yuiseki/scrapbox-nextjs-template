@@ -8,6 +8,7 @@ Scrapbox のコンテンツを Next.js で SSG するためのテンプレート
 
 ### どう動く？
 
+
 - Scrapbox の API を経由してページ一覧と本文を取得します
 - Scrapbox 記法を React コンポーネントに変換します
 
