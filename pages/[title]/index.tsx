@@ -102,6 +102,16 @@ const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
           return <div key={idx} />;
         }
       })}
+      <footer>
+        Edit{" "}
+        <a
+          href={
+            "https://scrapbox.io/" + process.env.scrapboxProject + "/" + title
+          }
+        >
+          {title}
+        </a>
+      </footer>
     </div>
   );
 };
