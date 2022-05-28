@@ -116,7 +116,7 @@ export async function getStaticPaths() {
   const paths = json.pages.map((page: { title: string }) => {
     return "/" + encodeURIComponent(page.title);
   });
-  return { paths: paths, fallback: true };
+  return { paths: paths, fallback: false };
 }
 
 export async function getStaticProps({ params }: GetStaticPropsContext) {
