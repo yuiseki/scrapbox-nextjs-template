@@ -109,7 +109,9 @@ const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
 export async function getStaticPaths() {
   console.log("getStaticPaths");
   const res = await fetch(
-    "https://scrapbox.io/api/pages/yuiseki?skip=0&sort=updated&limit=100&q="
+    "https://scrapbox.io/api/pages/" +
+      process.env.scrapboxProject +
+      "?skip=0&sort=updated&limit=100&q="
   );
   const json = await res.json();
   const paths = json.pages
@@ -132,7 +134,11 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
     };
   }
   const res = await fetch(
-    "https://scrapbox.io/api/pages/yuiseki/" + params.title + "/text"
+    "https://scrapbox.io/api/pages/" +
+      process.env.scrapboxProject +
+      "/" +
+      params.title +
+      "/text"
   );
   const text = await res.text();
   const lines = parse(text);

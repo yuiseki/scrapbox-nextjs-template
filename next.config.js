@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     loader: "custom",
   },
+  env: {
+    scrapboxProject: "yuiseki",
+  },
 };
 
 module.exports = nextConfig;
