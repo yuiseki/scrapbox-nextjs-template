@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Line, Node, parse } from "@progfay/scrapbox-parser";
 import { GetStaticPropsContext } from "next";
-import Image from "next/image";
+import Link from "next/link";
 
 const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
   depth,
@@ -48,21 +48,16 @@ const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
                 key={depth + "-" + idx}
                 style={{
                   display: "inline-block",
-                  width: "300px",
-                  height: "300px",
+                  maxWidth: "300px",
+                  maxHeight: "300px",
                 }}
               >
-                <Image
-                  loader={({ src }) => `${src}`}
-                  width={300}
-                  alt=""
-                  src={node.src}
-                />
+                <img alt="" src={node.src} />
               </span>
             );
           case "link":
             return (
-              <a
+              <Link
                 key={depth + "-" + idx}
                 href={node.href}
                 target="_blank"
@@ -70,7 +65,7 @@ const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
                 style={{ fontSize: "1em" }}
               >
                 {node.content.length !== 0 ? node.content : node.href}
-              </a>
+              </Link>
             );
           default:
             break;
