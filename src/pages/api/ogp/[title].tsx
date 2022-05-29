@@ -41,7 +41,9 @@ const styles = `
 `;
 
 const Content: React.FC<{ title: string }> = ({ title }) => {
-  if (title.length === 0) {
+  const logoPath =
+    "" + process.env.siteOrigin + process.env.basePath + "/logo-mini.jpg";
+  if (title.length === 0 || title === "index") {
     return (
       <html>
         <head>
@@ -52,7 +54,7 @@ const Content: React.FC<{ title: string }> = ({ title }) => {
             <span>{process.env.siteName}</span>
           </h1>
           <h2>
-            <img src="http://localhost:3000/yuiseki-mini.jpg" />
+            <img src={logoPath} />
           </h2>
         </body>
       </html>
@@ -67,7 +69,7 @@ const Content: React.FC<{ title: string }> = ({ title }) => {
           <h2>{title}</h2>
           <div className="logo">
             <span>{process.env.siteName}</span>
-            <img src="http://localhost:3000/yuiseki-mini.jpg" />
+            <img src={logoPath} />
           </div>
         </body>
       </html>

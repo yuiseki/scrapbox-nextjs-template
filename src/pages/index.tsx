@@ -7,7 +7,7 @@ export const Home: NextPage<{ lines: Line[] }> = ({ lines }) => {
   const absoluteUrl = "" + process.env.siteOrigin + process.env.basePath;
   const pageTitle = "Home | " + process.env.siteName;
   const ogImageUrl =
-    "" + process.env.siteOrigin + process.env.basePath + "/api/ogp/.png";
+    "" + process.env.siteOrigin + process.env.basePath + "/index.png";
 
   if (!lines) {
     return <div>loading...</div>;

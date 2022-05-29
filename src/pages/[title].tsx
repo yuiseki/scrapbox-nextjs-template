@@ -13,12 +13,7 @@ export const ScrapboxPage: NextPage<{ lines: Line[] }> = ({ lines }) => {
     "" + process.env.siteOrigin + process.env.basePath + "/" + title;
   const pageTitle = title + " | " + process.env.siteName;
   const ogImageUrl =
-    "" +
-    process.env.siteOrigin +
-    process.env.basePath +
-    "/api/ogp/" +
-    title +
-    ".png";
+    "" + process.env.siteOrigin + process.env.basePath + "/index.png";
 
   if (!lines) {
     return <div>loading...</div>;
