@@ -25,6 +25,7 @@ export const ScrapboxPage: NextPage<{ lines: Line[] }> = ({ lines }) => {
         <title>{pageTitle}</title>
         <meta property="og:type" content="article" />
         <meta property="og:url" content={absoluteUrl} />
+        <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageTitle} />
         <meta property="og:image" content={ogImageUrl} />
         <meta property="og:image:alt" content="" />
