@@ -15,8 +15,8 @@
 # production
 /build
 
-/tmp
-/public/data
+/tmp/*
+/public/data/*
 !.gitkeep
 
 # misc
