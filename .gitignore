@@ -16,6 +16,8 @@
 /build
 
 /tmp
+/public/data
+!.gitkeep
 
 # misc
 .DS_Store

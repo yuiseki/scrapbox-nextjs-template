@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "npm run fetch-page",
     "dev": "next dev",
+    "prebuild": "npm run fetch-page",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch-page": "bash ./scripts/fetchScrapboxPages.sh"
   },
   "dependencies": {
     "@progfay/scrapbox-parser": "^7.2.0",
