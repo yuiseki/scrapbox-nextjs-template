@@ -6,7 +6,7 @@ const nextConfig = {
     loader: "custom",
   },
   env: {
-    scrapboxProject: "yuiseki",
+    scrapboxProject: "yuiseki-portfolio",
   },
 };
 
