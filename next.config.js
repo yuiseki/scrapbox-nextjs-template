@@ -5,6 +5,12 @@ const nextConfig = {
   env: {
     scrapboxProject: process.env.SCRAPBOX_PROJECT,
     siteName: process.env.SITE_NAME,
+    basePath:
+      process.env.NODE_ENV === "development" ? "" : process.env.BASE_PATH,
+    siteOrigin:
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3000"
+        : process.env.SITE_ORIGIN,
   },
 };
 

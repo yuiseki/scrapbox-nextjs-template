@@ -10,11 +10,6 @@ export const ScrapboxPageView: React.FC<{
 }> = ({ rawTitle, displayTitle, lines }) => {
   return (
     <>
-      <Head>
-        <title>
-          {displayTitle} | {process.env.siteName}
-        </title>
-      </Head>
       <h2>{displayTitle}</h2>
       <Lines lines={lines} />
       <footer>
