@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { Line, parse } from "@progfay/scrapbox-parser";
 import { GetStaticPropsContext, NextPage } from "next";
 import { ScrapboxPageView } from "../components/layout/ScrapboxPageView";
-import pages from "../public/data/pages.json";
+import pages from "../../public/data/pages.json";
 
 export const ScrapboxPage: NextPage<{ lines: Line[] }> = ({ lines }) => {
   const router = useRouter();

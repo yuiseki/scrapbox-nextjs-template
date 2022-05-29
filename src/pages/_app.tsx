@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import pages from "../public/data/pages.json";
+import pages from "../../public/data/pages.json";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [pinnedPages, setPinnedPages] = useState<string[]>([]);
