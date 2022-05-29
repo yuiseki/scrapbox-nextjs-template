@@ -12,7 +12,13 @@ export const ScrapboxPage: NextPage<{ lines: Line[] }> = ({ lines }) => {
     return <div>loading...</div>;
   }
 
-  return <ScrapboxPageView title={title as string} lines={lines} />;
+  return (
+    <ScrapboxPageView
+      rawTitle={title as string}
+      displayTitle={title as string}
+      lines={lines}
+    />
+  );
 };
 
 export async function getStaticPaths() {

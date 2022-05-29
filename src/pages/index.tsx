@@ -7,7 +7,9 @@ export const Home: NextPage<{ lines: Line[] }> = ({ lines }) => {
     return <div>loading...</div>;
   }
 
-  return <ScrapboxPageView title="Home" lines={lines} />;
+  return (
+    <ScrapboxPageView rawTitle="index" displayTitle="Home" lines={lines} />
+  );
 };
 
 export async function getStaticProps() {
