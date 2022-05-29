@@ -1,0 +1,78 @@
+{
+  "projectName": "scrapbox-nextjs-template",
+  "skip": 0,
+  "limit": 100,
+  "count": 3,
+  "pages": [
+    {
+      "id": "6292e6af15fe01001e22cd69",
+      "title": "Home",
+      "image": "https://lh3.googleusercontent.com/a-/AOh14GhFhtfvru60DxY183KH87MOtaBIn3OEc6ZosUo_=s96-c#.png",
+      "descriptions": [
+        "[*** About]",
+        "ScrapboxプロジェクトをNext.jsでSSGしてGitHub Pagesなどで静的Webサイトとして公開できるようにするためのテンプレートです",
+        "[*** 仕様]",
+        "ブラケットリンク記法に対応しています",
+        "[Exaple]"
+      ],
+      "user": {
+        "id": "5b614e70895ac50014bb24d4"
+      },
+      "pin": 9007197600946249,
+      "views": 4,
+      "linked": 0,
+      "commitId": "629309e90f4d6b0023f76d66",
+      "created": 1653794481,
+      "updated": 1653803497,
+      "accessed": 1653803494,
+      "snapshotCreated": 1653803325,
+      "pageRank": 0
+    },
+    {
+      "id": "6292e7a5a06b4d00232969c9",
+      "title": "Exaple",
+      "image": "https://gyazo.com/7ac86cd95a434167612140d3710618a9/raw",
+      "descriptions": [
+        "ただのテキストのセクションタイトル",
+        "一段回インデント",
+        "二段階インデント",
+        "三段階インデント",
+        "[[[]でやる太字記法]]"
+      ],
+      "user": {
+        "id": "5b614e70895ac50014bb24d4"
+      },
+      "pin": 9007197600937673,
+      "views": 1,
+      "linked": 1,
+      "commitId": "6293093cc52baf001d2b493d",
+      "created": 1653794727,
+      "updated": 1653803324,
+      "accessed": 1653803315,
+      "snapshotCreated": null,
+      "pageRank": 1
+    },
+    {
+      "id": "6292e7e164115c0020a3c401",
+      "title": "yuiseki",
+      "image": "https://lh3.googleusercontent.com/a-/AOh14GhFhtfvru60DxY183KH87MOtaBIn3OEc6ZosUo_=s96-c#.png",
+      "descriptions": [
+        "[https://lh3.googleusercontent.com/a-/AOh14GhFhtfvru60DxY183KH87MOtaBIn3OEc6ZosUo_=s96-c#.png]",
+        "this is yuiseki’s page",
+        "#member"
+      ],
+      "user": {
+        "id": "5b614e70895ac50014bb24d4"
+      },
+      "pin": 0,
+      "views": 1,
+      "linked": 0,
+      "commitId": "6292e7e2e56319001db2b362",
+      "created": 1653794785,
+      "updated": 1653794786,
+      "accessed": 1653803313,
+      "snapshotCreated": null,
+      "pageRank": 0
+    }
+  ]
+}
