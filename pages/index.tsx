@@ -1,16 +1,27 @@
 import { Line, parse } from "@progfay/scrapbox-parser";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { Lines } from "../components/Lines";
 
 const Home: NextPage<{ lines: Line[] }> = ({ lines }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Home | {process.env.siteName}</title>
       </Head>
       <Lines lines={lines} />
-    </div>
+      <footer>
+        <div>
+          Use this at GitHub :{" "}
+          <Link href="https://github.com/yuiseki/scrapbox-nextjs-template">
+            <a target="_blank" rel="noreferrer">
+              yuiseki/scrapbox-nextjs-template
+            </a>
+          </Link>
+        </div>
+      </footer>
+    </>
   );
 };
 

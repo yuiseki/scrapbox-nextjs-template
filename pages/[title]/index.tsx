@@ -14,7 +14,7 @@ const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
   }
 
   return (
-    <div>
+    <>
       <Head>
         <title>
           {title} | {process.env.siteName}
@@ -23,16 +23,28 @@ const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
       <h2>{title}</h2>
       <Lines lines={lines} />
       <footer>
-        Edit this page:{" "}
-        <a
-          href={
-            "https://scrapbox.io/" + process.env.scrapboxProject + "/" + title
-          }
-        >
-          {title}
-        </a>
+        <div>
+          Edit this page on Scrapbox :{" "}
+          <Link
+            href={
+              "https://scrapbox.io/" + process.env.scrapboxProject + "/" + title
+            }
+          >
+            <a target="_blank" rel="noreferrer">
+              {process.env.scrapboxProject}/{title}
+            </a>
+          </Link>
+        </div>
+        <div>
+          Use this at GitHub :{" "}
+          <Link href="https://github.com/yuiseki/scrapbox-nextjs-template">
+            <a target="_blank" rel="noreferrer">
+              yuiseki/scrapbox-nextjs-template
+            </a>
+          </Link>
+        </div>
       </footer>
-    </div>
+    </>
   );
 };
 

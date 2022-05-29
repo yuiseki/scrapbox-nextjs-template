@@ -22,4 +22,13 @@ nav ul li {
 
 .root {
   padding: 30px;
+  margin-bottom: 60px;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+footer div {
+  margin-top: 10px;
 }
