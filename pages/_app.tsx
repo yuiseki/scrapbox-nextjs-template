@@ -5,7 +5,7 @@ import Link from "next/link";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="root">
-      <h1>{process.env.scrapboxProject}</h1>
+      <h1>{process.env.siteName}</h1>
       <nav>
         <ul>
           <li>

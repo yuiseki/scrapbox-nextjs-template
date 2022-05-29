@@ -1,7 +1,7 @@
 import { Line } from "@progfay/scrapbox-parser";
 import { Nodes } from "./Nodes";
 
-export const Lines: React.FC<{lines: Line[]}> = ({ lines }) => {
+export const Lines: React.FC<{ lines: Line[] }> = ({ lines }) => {
   return (
     <>
       {lines.map((line, idx) => {
@@ -10,7 +10,7 @@ export const Lines: React.FC<{lines: Line[]}> = ({ lines }) => {
             <div
               key={idx}
               style={{
-                padding: "5px " + line.indent * 10 + "px",
+                padding: "5px " + line.indent * 20 + "px",
               }}
             >
               <Nodes depth={0} nodes={line.nodes} />

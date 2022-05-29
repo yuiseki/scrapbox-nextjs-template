@@ -8,7 +8,6 @@ export const Nodes: React.FC<{ depth: number; nodes: Node[] }> = ({
   return (
     <>
       {nodes.map((node, idx) => {
-        console.log(node);
         switch (node.type) {
           case "plain":
             return (

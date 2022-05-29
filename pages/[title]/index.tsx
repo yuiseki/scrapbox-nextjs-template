@@ -3,6 +3,7 @@ import { Line, parse } from "@progfay/scrapbox-parser";
 import { GetStaticPropsContext } from "next";
 import { Lines } from "../../components/Lines";
 import Link from "next/link";
+import Head from "next/head";
 
 const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
   const router = useRouter();
@@ -14,6 +15,11 @@ const Page: React.FC<{ lines: Line[] }> = ({ lines }) => {
 
   return (
     <div>
+      <Head>
+        <title>
+          {title} | {process.env.siteName}
+        </title>
+      </Head>
       <h2>{title}</h2>
       <Lines lines={lines} />
       <footer>
@@ -37,13 +43,9 @@ export async function getStaticPaths() {
       "?skip=0&sort=updated&limit=100&q="
   );
   const json = await res.json();
-  const paths = json.pages
-    .map((page: { title: string }) => {
-      if (page.title.length > 0) {
-        return "/" + encodeURIComponent(page.title);
-      }
-    })
-    .filter((title: string) => title);
+  const paths = json.pages.map((page: { title: string }) => {
+    return "/" + encodeURIComponent(page.title);
+  });
   return { paths: paths, fallback: false };
 }
 
