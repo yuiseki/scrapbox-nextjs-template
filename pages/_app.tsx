@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <ul>
           {pinnedPages.map((page) => {
             switch (page) {
-              case "Home":
+              case "index":
                 return (
                   <li key={page}>
                     <Link href="/">
