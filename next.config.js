@@ -3,8 +3,14 @@ const nextConfig = {
   reactStrictMode: true,
   basePath:
     process.env.NODE_ENV === "development" ? "" : "/scrapbox-nextjs-template",
-  images: {
-    loader: "custom",
+  redirects: async () => {
+    return [
+      {
+        source: "/index",
+        destination: "/",
+        permanent: true,
+      },
+    ];
   },
   env: {
     scrapboxProject: "scrapbox-nextjs-template",
