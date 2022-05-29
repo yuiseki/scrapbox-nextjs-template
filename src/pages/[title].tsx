@@ -29,6 +29,8 @@ export const ScrapboxPage: NextPage<{ lines: Line[] }> = ({ lines }) => {
         <meta property="og:description" content={pageTitle} />
         <meta property="og:image" content={ogImageUrl} />
         <meta property="og:image:alt" content="" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
       </Head>
       <ScrapboxPageView
         rawTitle={title as string}
