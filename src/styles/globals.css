@@ -10,6 +10,10 @@ h1 {
   margin: 0px;
 }
 
+nav {
+  margin-top: 15px;
+}
+
 nav ul {
   padding-left: 0;
 }

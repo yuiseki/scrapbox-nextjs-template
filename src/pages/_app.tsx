@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import pages from "../../public/data/pages.json";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   const [pinnedPages, setPinnedPages] = useState<string[]>([]);
   useEffect(() => {
     const title = pages.pages
@@ -27,7 +27,16 @@ function MyApp({ Component, pageProps }: AppProps) {
                 return (
                   <li key={page}>
                     <Link href="/">
-                      <a>Home</a>
+                      <a
+                        role="button"
+                        className={
+                          router.pathname === "/"
+                            ? "btn btn-primary"
+                            : "btn btn-outline-primary"
+                        }
+                      >
+                        Home
+                      </a>
                     </Link>
                   </li>
                 );
@@ -35,7 +44,16 @@ function MyApp({ Component, pageProps }: AppProps) {
                 return (
                   <li key={page}>
                     <Link href={"/" + page}>
-                      <a>{page}</a>
+                      <a
+                        role="button"
+                        className={
+                          router.pathname === "/" + page
+                            ? "btn btn-primary"
+                            : "btn btn-outline-primary"
+                        }
+                      >
+                        {page}
+                      </a>
                     </Link>
                   </li>
                 );

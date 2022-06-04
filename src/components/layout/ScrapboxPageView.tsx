@@ -1,5 +1,4 @@
 import { Line } from "@progfay/scrapbox-parser";
-import Head from "next/head";
 import Link from "next/link";
 import { Lines } from "../scrapbox/Lines";
 
@@ -11,7 +10,9 @@ export const ScrapboxPageView: React.FC<{
   return (
     <>
       <h2>{displayTitle}</h2>
-      <Lines lines={lines} />
+      <div>
+        <Lines lines={lines} />
+      </div>
       <footer>
         <div>
           Scrapboxで編集 :{" "}
