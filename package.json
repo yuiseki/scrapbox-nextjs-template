@@ -12,7 +12,7 @@
     "fetch-page": "bash ./scripts/fetchScrapboxPages.sh"
   },
   "dependencies": {
-    "@progfay/scrapbox-parser": "^7.2.0",
+    "@progfay/scrapbox-parser": "^8.0.0",
     "next": "12.3.4",
     "playwright-aws-lambda": "^0.10.0",
     "react": "18.1.0",
