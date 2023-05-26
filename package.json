@@ -15,13 +15,13 @@
     "@progfay/scrapbox-parser": "^8.0.0",
     "next": "12.3.4",
     "playwright-aws-lambda": "^0.10.0",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.16.16",
-    "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.5",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
     "eslint": "8.41.0",
     "eslint-config-next": "12.3.4",
     "typescript": "5.0.4"
