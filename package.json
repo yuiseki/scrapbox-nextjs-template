@@ -6,8 +6,8 @@
     "predev": "npm run fetch-page",
     "dev": "next dev",
     "prebuild": "npm run fetch-page",
-    "build": "next build && next export",
-    "start": "next start",
+    "build": "next build",
+    "start": "serve out -l 3000",
     "lint": "next lint",
     "fetch-page": "bash ./scripts/fetchScrapboxPages.sh"
   },
@@ -16,7 +16,8 @@
     "next": "14.0.4",
     "playwright-aws-lambda": "^0.10.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "serve": "^14.2.1"
   },
   "devDependencies": {
     "@types/node": "20.10.5",
