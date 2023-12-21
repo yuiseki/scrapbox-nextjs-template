@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Node } from "@progfay/scrapbox-parser";
 import Link from "next/link";
 

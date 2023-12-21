@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-head-element */
 // https://zenn.dev/tdkn/articles/c52a0cc7bea561
 
 import ReactDOM from "react-dom/server";
@@ -54,7 +56,7 @@ const Content: React.FC<{ title: string }> = ({ title }) => {
             <span>{process.env.siteName}</span>
           </h1>
           <h2>
-            <img src={logoPath} />
+            <img src={logoPath} alt="logo" />
           </h2>
         </body>
       </html>
@@ -69,7 +71,7 @@ const Content: React.FC<{ title: string }> = ({ title }) => {
           <h2>{title}</h2>
           <div className="logo">
             <span>{process.env.siteName}</span>
-            <img src={logoPath} />
+            <img src={logoPath} alt="logo" />
           </div>
         </body>
       </html>
