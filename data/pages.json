@@ -20,16 +20,13 @@
       },
       "lastUpdateUser": null,
       "pin": 9007197600946249,
-      "views": 101,
+      "views": 102,
       "linked": 0,
-      "commitId": "62934c4557db1a0023570324",
       "created": 1653794481,
       "updated": 1653820485,
-      "accessed": 1731005923,
-      "snapshotCreated": 1653803325,
-      "pageRank": 0,
+      "accessed": 1731839485,
       "linesCount": 19,
-      "charsCount": 374
+      "charsCount": 19
     },
     {
       "id": "6292e7a5a06b4d00232969c9",
@@ -49,14 +46,11 @@
       "pin": 9007197600937673,
       "views": 37,
       "linked": 1,
-      "commitId": "6293093cc52baf001d2b493d",
       "created": 1653794727,
       "updated": 1653803324,
       "accessed": 1730034341,
-      "snapshotCreated": null,
-      "pageRank": 1,
       "linesCount": 35,
-      "charsCount": 463
+      "charsCount": 35
     },
     {
       "id": "6293178bac4f90001ddb2cca",
@@ -72,14 +66,11 @@
       "pin": 9007197600933988,
       "views": 23,
       "linked": 0,
-      "commitId": "6293179afc22d4001d1e9e7c",
       "created": 1653806991,
       "updated": 1653807002,
       "accessed": 1729656994,
-      "snapshotCreated": null,
-      "pageRank": 0,
       "linesCount": 3,
-      "charsCount": 10
+      "charsCount": 3
     },
     {
       "id": "6292e7e164115c0020a3c401",
@@ -97,14 +88,11 @@
       "pin": 0,
       "views": 19,
       "linked": 0,
-      "commitId": "6292e7e2e56319001db2b362",
       "created": 1653794785,
       "updated": 1653794786,
       "accessed": 1718609677,
-      "snapshotCreated": null,
-      "pageRank": 0,
       "linesCount": 7,
-      "charsCount": 130
+      "charsCount": 7
     }
   ]
 }
