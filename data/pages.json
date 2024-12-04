@@ -18,7 +18,9 @@
       "user": {
         "id": "5b614e70895ac50014bb24d4"
       },
-      "lastUpdateUser": null,
+      "lastUpdateUser": {
+        "id": "5b614e70895ac50014bb24d4"
+      },
       "pin": 9007197600946249,
       "views": 102,
       "linked": 0,
@@ -26,7 +28,7 @@
       "updated": 1653820485,
       "accessed": 1731839485,
       "linesCount": 19,
-      "charsCount": 19
+      "charsCount": 374
     },
     {
       "id": "6292e7a5a06b4d00232969c9",
@@ -42,15 +44,17 @@
       "user": {
         "id": "5b614e70895ac50014bb24d4"
       },
-      "lastUpdateUser": null,
+      "lastUpdateUser": {
+        "id": "5b614e70895ac50014bb24d4"
+      },
       "pin": 9007197600937673,
-      "views": 37,
+      "views": 38,
       "linked": 1,
       "created": 1653794727,
       "updated": 1653803324,
-      "accessed": 1730034341,
+      "accessed": 1732495307,
       "linesCount": 35,
-      "charsCount": 35
+      "charsCount": 463
     },
     {
       "id": "6293178bac4f90001ddb2cca",
@@ -62,7 +66,9 @@
       "user": {
         "id": "5b614e70895ac50014bb24d4"
       },
-      "lastUpdateUser": null,
+      "lastUpdateUser": {
+        "id": "5b614e70895ac50014bb24d4"
+      },
       "pin": 9007197600933988,
       "views": 23,
       "linked": 0,
@@ -70,7 +76,7 @@
       "updated": 1653807002,
       "accessed": 1729656994,
       "linesCount": 3,
-      "charsCount": 3
+      "charsCount": 10
     },
     {
       "id": "6292e7e164115c0020a3c401",
@@ -84,7 +90,9 @@
       "user": {
         "id": "5b614e70895ac50014bb24d4"
       },
-      "lastUpdateUser": null,
+      "lastUpdateUser": {
+        "id": "5b614e70895ac50014bb24d4"
+      },
       "pin": 0,
       "views": 19,
       "linked": 0,
@@ -92,7 +100,7 @@
       "updated": 1653794786,
       "accessed": 1718609677,
       "linesCount": 7,
-      "charsCount": 7
+      "charsCount": 130
     }
   ]
 }
