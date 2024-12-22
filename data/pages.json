@@ -28,7 +28,8 @@
       "updated": 1653820485,
       "accessed": 1731839485,
       "linesCount": 19,
-      "charsCount": 374
+      "charsCount": 374,
+      "helpfeels": []
     },
     {
       "id": "6292e7a5a06b4d00232969c9",
@@ -54,7 +55,8 @@
       "updated": 1653803324,
       "accessed": 1732495307,
       "linesCount": 35,
-      "charsCount": 463
+      "charsCount": 463,
+      "helpfeels": []
     },
     {
       "id": "6293178bac4f90001ddb2cca",
@@ -76,7 +78,8 @@
       "updated": 1653807002,
       "accessed": 1729656994,
       "linesCount": 3,
-      "charsCount": 10
+      "charsCount": 10,
+      "helpfeels": []
     },
     {
       "id": "6292e7e164115c0020a3c401",
@@ -100,7 +103,8 @@
       "updated": 1653794786,
       "accessed": 1718609677,
       "linesCount": 7,
-      "charsCount": 130
+      "charsCount": 130,
+      "helpfeels": []
     }
   ]
 }
