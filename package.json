@@ -12,7 +12,7 @@
     "fetch-page": "bash ./scripts/fetchScrapboxPages.sh"
   },
   "dependencies": {
-    "@progfay/scrapbox-parser": "^9.0.0",
+    "@progfay/scrapbox-parser": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "next": "15.3.2",
