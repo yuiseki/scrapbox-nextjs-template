@@ -15,7 +15,7 @@
     "@progfay/scrapbox-parser": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "next": "15.5.10",
+    "next": "16.1.6",
     "playwright-aws-lambda": "^0.11.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -26,7 +26,7 @@
     "@types/react": "19.2.6",
     "@types/react-dom": "19.2.3",
     "eslint": "^8.56.0",
-    "eslint-config-next": "15.5.12",
+    "eslint-config-next": "16.1.6",
     "typescript": "5.9.3"
   }
 }
